@@ -1,5 +1,3 @@
-// let id = require('../controller/userController');
-
 let users = [
     {
         id: 1,
