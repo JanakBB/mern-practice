@@ -8,3 +8,8 @@
 6/17/2024 - GET, /api/post/get?id=1 200 4 ms
 6/17/2024 - GET, /api/post/get?id=1 200 3 ms
 6/17/2024 - GET, /api/post/get?id=1 200 4 ms
+6/17/2024 - GET, /api/post/get?id=1 200 5 ms
+6/17/2024 - GET, /api/post/get?id=1 200 6 ms
+6/17/2024 - GET, /api/post/get?id=1 200 3 ms
+6/17/2024 - GET, /api/post/get?id=1 200 3 ms
+6/17/2024 - GET, /api/post/get?id=1 ::1 200 3 ms

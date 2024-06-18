@@ -13,10 +13,10 @@ function logger (req, res, next) {
     res.on('finish', () => {
         let end = Date.now()
         let today = new Date();
-        let log = `${today.toLocaleDateString()} - ${req.method}, ${req.originalUrl} ${res.statusCode} ${end - start} ms`;
+        let log = `${today.toLocaleDateString()} - ${req.method}, ${req.originalUrl} ${req.ip} ${res.statusCode} ${end - start} ms`;
         console.log(log [reqColors[req.method]]);
-        fs.appendFile('loggerRecord.txt', `\n${log}`, (data) => {
-            console.log('logger data append in loggerRecord.txt'['blue']);
+        fs.appendFile('loggerRecord.txt', `\n${log}`, (err) => {
+            if(err) console.log('error')
         } )
     });
     next();
